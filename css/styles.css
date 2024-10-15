@@ -1519,15 +1519,15 @@ hr.fancy::before {
 .lead,
 .attention-getter {
 	font-family: var(--font-1);
-	font-size  : var(--text-md);
-	line-height: var(--vspace-1_25);
+	font-size  : ;
+	line-height: emvar(--vspace-1_25);
 }
 
 @media screen and (max-width: 800px) {
 
 	.lead,
 	.attention-getter {
-		font-size  : calc(var(--text-size) * 1.1);
+		font-size  : calc(var(--text-size));
 		line-height: calc(1.125 * var(--space));
 	}
 }
@@ -2770,7 +2770,7 @@ td:last-child {
 }
 
 .text-display-title {
-	font-size     : var(--text-display-2);
+	font-size     : 3em;
 	line-height   : 1.0606;
 	letter-spacing: -0.012em;
 	color         : var(--color-text-dark);
@@ -2813,8 +2813,13 @@ td:last-child {
 	margin-bottom: 0;
 }
 
-.list-items__item-title,
 .list-items__item-small-title {
+	background-color: chocolate;
+	color: #fff;
+	margin-top: 0;
+}
+
+.list-items__item-title {
 	color     : var(--color-text-dark);
 	margin-top: 0;
 }
@@ -2889,7 +2894,7 @@ td:last-child {
 }
 
 .blog-card__cat-links {
-	font-size: var(--text-sm);
+	font-size: 0.8em;
 }
 
 .blog-card__cat-links a {
@@ -3509,7 +3514,7 @@ td:last-child {
 
 .s-pageheader .page-title {
 	margin-top : 0;
-	font-size  : clamp(5.2rem, 10vw, var(--text-huge-1));
+	font-size  : 3em;
 	line-height: 1.0465;
 	color      : var(--color-3);
 }
